@@ -1,6 +1,10 @@
 🎬 TrendMe: Trend-Aware Brand Video Generator
+
 Team Members: Ever Solís, Adrián Alemán, Brenda Scarleth Gutierrez, Alejandro Luna
+
 Project by: Octobrain
+
+
 
 🔍 About TrendMe
 TrendMe is a tool that helps brands generate promotional videos based on real-time trends from social media. It scrapes trending YouTube Shorts, analyzes their content, and generates branded videos that match the trend's context and style.
