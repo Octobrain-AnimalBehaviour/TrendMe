@@ -1,78 +1,70 @@
-🎬 TrendMe: Trend-Aware Brand Video Generator
+# 🎬 TrendMe: Trend-Aware Brand Video Generator
 
-Team Members: Ever Solís, Adrián Alemán, Brenda Scarleth Gutierrez, Alejandro Luna
+**Team Members**: Ever Solís, Adrián Alemán, Brenda Scarleth Gutierrez, Alejandro Luna  
+**Project by**: [Octobrain](#)
 
-Project by: Octobrain
+---
 
+## 🔍 About TrendMe
 
+**TrendMe** is an AI-powered tool that helps brands create promotional videos based on *real-time trends* from social media. It scrapes trending **YouTube Shorts**, analyzes their content, and generates branded videos that match the trend’s context and style.
 
-🔍 About TrendMe
-TrendMe is a tool that helps brands generate promotional videos based on real-time trends from social media. It scrapes trending YouTube Shorts, analyzes their content, and generates branded videos that match the trend's context and style.
+---
 
-📁 Main File
-video_and_audio_analysis.ipynb: Contains the complete pipeline from data scraping to video generation.
+## 📁 Main File
 
-⚙️ How to Run
-API Keys Required:
+- `video_and_audio_analysis.ipynb`: Contains the complete pipeline from **data scraping** to **video generation**.
 
-Google YouTube Data API
+---
 
-HailuoAI API
+## ⚙️ How to Run
 
-Set Up:
+### 🔐 API Keys Required
+- Google **YouTube Data API**
+- **HailuoAI** API
 
-Use Google Colab with a GPU runtime
+### 🚀 Setup Instructions
+1. Open the notebook in **Google Colab** (GPU runtime recommended).
+2. Run all cells **in order**.
+3. Provide **input parameters** when prompted.
 
-Run all cells in order
+---
 
-Provide input parameters when prompted
+## 🔄 Pipeline Overview
 
-🔄 Pipeline Overview
-Scrape Trending Videos
+### 1. **Scrape Trending Videos**
+- Filter by: `style`, `duration`, and `keywords`
 
-Based on filters: style, duration, and keywords
-
-Extract Contextual Features
+### 2. **Extract Contextual Features**
 From each video:
+- `visual_style`
+- `topic_summary`
+- `text_narration`
+- `visual_assets_needed`
+- `audio_tone`
+- `audio_type`
+- `emotion_tone`
+- `emotion_triggered`
+- `trend_or_meme_reference`
+- `target_audience`
+- `audience_intent`
 
-visual_style
+### 3. **Generate Prompt**
+- Combines **trend context** with **brand input**
 
-topic_summary
+### 4. **Generate Branded Video**
+- Uses AI to create a **promotional video** aligned with the **trend** and **brand identity**
 
-text_narration
+---
 
-visual_assets_needed
+## 🧠 Tech Stack
 
-audio_tone
+- **Python**
+- **YouTube Data API**
+- **HailuoAI** (video generation)
+- `LlavaNextVideoForConditionalGeneration` (video-language model)
+- Custom **text-to-video prompt system**
 
-audio_type
+---
 
-emotion_tone
-
-emotion_triggered
-
-trend_or_meme_reference
-
-target_audience
-
-audience_intent
-
-Generate Prompt
-
-Combines trend context + brand input
-
-Generate Branded Video
-
-Uses AI to create a promotional video aligned with trends and brand identity
-
-🧠 Tech Stack
-Python
-
-YouTube Data API
-
-HailuoAI (video generation)
-
-LlavaNextVideoForConditionalGeneration (video-language model)
-
-Custom text-to-video prompt system
-
+> 🎯 TrendMe empowers marketers to stay on trend, increase engagement, and rapidly respond to cultural moments.
